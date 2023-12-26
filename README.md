@@ -19,7 +19,7 @@ This is a simple FUZZing tool written in Python using the `requests` library and
 ```
 ### Example
 ```bash
-python fuzzing_tool.py -u http://example.com -fc 500,502 -w wordlist.txt
+python fuzz.py -u http://example.com - -w wordlist.txt
 ```
 ## Script Details
 The script performs fuzz testing by making HEAD requests to different endpoints formed by appending words from the provided wordlist to the base URL. It utilizes a ThreadPoolExecutor for concurrent requests to improve efficiency.
